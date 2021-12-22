@@ -20,6 +20,10 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "react": "^17.0.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.16.5",
     "@babel/plugin-proposal-class-properties": "^7.16.5",
@@ -62,8 +66,5 @@
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
-  },
-  "dependencies": {
-    "dotenv": "^10.0.0"
   }
 }
