@@ -39,7 +39,6 @@ module.exports = [{
     port: 3000,
   },
   plugins: [
-    new HtmlWebpackPlugin(),
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
@@ -136,6 +135,9 @@ module.exports = [{
     port: 3000,
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: 'index.html',
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
       'process.env': JSON.stringify(process.env),
