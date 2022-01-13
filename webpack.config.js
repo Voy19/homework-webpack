@@ -29,17 +29,7 @@ module.exports = [{
       chunks: 'all',
     },
   },
-  devServer: {
-    historyApiFallback: true,
-    static: {
-      directory: path.join(__dirname, './public'),
-    },
-    open: true,
-    compress: true,
-    port: 3000,
-  },
   plugins: [
-    new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
       'process.env': JSON.stringify(process.env),
